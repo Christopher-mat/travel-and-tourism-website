@@ -214,8 +214,8 @@ header {
   color: #aaa;
 }
 
-/* ✅ Responsive Adjustments */
-@media (max-width: 768px) {
+
+@media (max-width: 1000px) {
   header {
     flex-direction: column;
     align-items: flex-start;
