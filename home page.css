@@ -1,4 +1,4 @@
-html {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,6 +7,7 @@ html {
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
+  line-height: 1.6;
 }
 
 header {
@@ -16,10 +17,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .pp2 {
-  font-size: 50px;
+  font-size: 2.5rem;
 }
 
 .logo {
@@ -31,23 +33,26 @@ header {
   list-style: none;
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .nav-links li a {
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.3s ease;
 }
 
 .nav-links li a:hover {
   background-color: #555;
-  border-radius: auto;
 }
 
 .slideshow-container {
-  max-width: 800px;
+  max-width: 100%;
   margin: 2rem auto;
   position: relative;
+  padding: 0 1rem;
 }
 
 .slide {
@@ -56,7 +61,8 @@ header {
 
 .slide img {
   width: 100%;
-  border-radius: auto;
+  border-radius: 8px;
+  height: auto;
 }
 
 .fade {
@@ -86,7 +92,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  max-width: auto;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -94,9 +100,10 @@ header {
 .search-form select {
   padding: 0.7rem 1rem;
   border: none;
-  border-radius: auto;
+  border-radius: 4px;
   font-size: 1rem;
   min-width: 180px;
+  flex: 1;
 }
 
 .search-form button {
@@ -105,7 +112,7 @@ header {
   color: white;
   border: none;
   font-size: 1rem;
-  border-radius: auto;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -149,6 +156,7 @@ header {
 .footer-links a {
   color: #eee;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .footer-links a:hover {
@@ -173,13 +181,14 @@ header {
 
 .footer-newsletter form {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 
 .footer-newsletter input {
   padding: 0.5rem;
   border: none;
-  border-radius: auto;
+  border-radius: 4px;
   flex: 1;
 }
 
@@ -188,7 +197,7 @@ header {
   background-color: #ff7f50;
   color: white;
   border: none;
-  border-radius: auto;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -205,6 +214,34 @@ header {
   color: #aaa;
 }
 
-title {
-  ul list-style-image: url(pawprint.gif);
+/* ✅ Responsive Adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .search-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .search-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-newsletter form {
+    flex-direction: column;
+  }
 }
