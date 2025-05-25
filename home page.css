@@ -68,7 +68,7 @@ header {
   height: auto;
   max-height: 80vh;          
   object-fit: cover;         
-  border-radius: 12px;
+  border-radius: auto;
   display: block;
 
 
