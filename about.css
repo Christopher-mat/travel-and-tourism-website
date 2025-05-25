@@ -17,7 +17,7 @@ body {
 }
 
 .sidebar {
-  width: 220vh;
+  width: 220vw;
   background-color: #333;
   color: white;
   padding: 2rem 1rem;
@@ -79,7 +79,7 @@ h2 {
 
 .member img {
   border-radius: 50%;
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -104,7 +104,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2rem;
-  max-width: 1100vh;
+  max-width: 1100vw;
   margin: auto;
 }
 
