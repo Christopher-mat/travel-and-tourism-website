@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Botswana Discovery</title>
+  <link rel="stylesheet" href="home page.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="images/logo.jpg" alt="brand logo" class="logo">
+      </a>
+      <p class="pp2">Botswana Discovery</p>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destination.html">Destinations</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="accomodation.html">Stay</a></li>
+        <li><a href="book.html">Book</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>
+       lets go through some of our available tours
+      </h1>
+
+      <h2> SAFARI TOURS</h2>
+       <h3> POPULAR</h3>
+       <ul>
+        <li>
+          <strong>Okavango Delta:</strong>
+          <p> Known for its unique inland delta ecosystem, it's a haven for wildlife, including the "Big Five".<br>
+             Activities include mokoro safaris (traditional canoe trips) and game drives. </p>
+        <li>
+          <strong>Chobe National Park:</strong>
+          <p> Famous for its large elephant population and its proximity to the Chobe River. Activities include 
+           game drives, boat cruises, and birdwatching.</p> 
+        <li>
+          <strong>Kalahari Desert:</strong>
+          <p> Offers a unique experience with its semi-arid landscapes and diverse wildlife, including the 
+          desert-adapted animals.</p>
+      <h3>CULTURE TOURS </h3>
+        <ul>
+          <li>
+            <strong>Village Visits:</strong>
+           <p> Visit villages like Manyana and Molepolole, located within a 50km radius of Gaborone, for a glimpse into rural life and traditions. 
+              <p><strong>•	Heritage Adventures:</strong></p>
+              This company offers a range of tours, including a history and culture tour,
+              a literary tour based on the No. 1 Ladies Detective Agency books, and bespoke trips tailored to your interests. 
+        	  <p><strong>Art and Craft Tour:</strong></p>
+              <p>Visit local artisans and craft workshops to learn about traditional skills like weaving and pottery.</p>
+        <li>
+          <strong>LUXURY TOURS</strong>
+       <p> <strong>•	Fly-in Safaris:</strong></p>
+             <p>Fly-in safaris provide direct access to remote locations, often featuring private lodges and camps.</p> 
+        <strong>•	Mobile Safaris:</strong>
+        <p>These offer a more adventurous experience, with accommodation in luxury tents and a focus on wildlife encounters in the bush.</p> 
+      
+    <div class="slideshow-container">
+      <div class="slide fade"><img src="images/Alan-Murray-Zebras-in-Nxai-Pans.jpg" alt="Slide 1"  style="width: 1000px; height: 530px;"/></div>
+      <div class="slide fade"><img src="images/Chobe-National-Park_14.jpg" alt="Slide 2"  style="width: 1000px; height: 530px;" /></div>
+      <div class="slide fade"><img src="images/Fly-in-Safari-Serengeti.jpg" alt="Slide 3" style="width: 1000px; height: 530px;" /></div>
+      <div class="slide fade"><img src="images/culture2.jpg" alt="Slide 4" style="width: 1000px; height: 530px;" /></div>
+      <div class="slide fade"><img src="images/Old-Palapye-(2).jpg" alt="Slide 5" style="width: 1000px; height: 530px;"/></div>
+      <div class="slide fade"><img src="images/eco.jpg" alt="Slide 6" style="width: 1000px; height: 530px;"/></div>
+      <div class="slide fade"><img src="images/safari3.jpg" alt="Slide 7" style="width: 1000px; height: 530px;" /></div>
+      <div class="slide fade"><img src="images/okavango delta.jpeg" alt="Slide 8" style="width: 1000px; height: 530px;"/></div>
+      <div class="slide fade"><img src="images/adventure.jpeg" alt="Slide 9" style="width: 1000px; height: 530px;"/></div>
+      <div class="slide fade"><img src="images/kgalagadi-transfrontier-park-landscape-red-sand-horizon.jpg" alt="Slide 10" style="width: 1000px; height: 530px;"/></div>
+    </div>
+  </main>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      const slides = document.querySelectorAll(".slide");
+      slides.forEach((slide) => (slide.style.display = "none"));
+      slideIndex++;
+      if (slideIndex > slides.length) slideIndex = 1;
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change image every 5 seconds
+    }
+  </script>
+</body>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>BotswanaDiscovery</h3>
+      <p>Your gateway to unforgettable adventures around the world.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="book.html">Book</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61575841137505"><img src="facebook-icon.png" alt="Facebook" /></a>
+        
+      </div>
+    </div>
+
+    <div class="footer-newsletter">
+      <h4>Stay Updated</h4>
+      <form>
+        <input type="email" placeholder="Your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Botswana Discovery. All rights reserved.</p>
+  </div>
+</footer>
+</html>
